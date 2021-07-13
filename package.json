@@ -3,12 +3,35 @@
     "displayName": "Developer theme dark",
     "description": "dark theme for developers",
     "version": "1.0.0",
+    "publisher": "HiteshChoudhary",
+	"author": {
+		"name": "Hitesh Choudhary",
+		"url": "https://hiteshchoudhary.com"
+	},
+	"icon": "assest/logo.jpge",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Rajeshwaran2001/developer-theme-dark.git"
+	},
+	"galleryBanner": {
+		"color": "#650681",
+		"theme": "dark"
+	},
     "engines": {
         "vscode": "^1.58.0"
     },
     "categories": [
         "Themes"
     ],
+    "keywords": [
+		"Dark Theme",
+		"Code Tutorial",
+		"Developer's Dark Theme",
+		"Rajesh",
+        "Coders Theme",
+        "Programmers Theme",
+		"Dark Theme contrast"
+	],
     "contributes": {
         "themes": [
             {
