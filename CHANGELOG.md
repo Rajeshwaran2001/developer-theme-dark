@@ -1,9 +1,40 @@
-# Change Log
+# ChangeLog
 
-All notable changes to the "developer-theme-dark" extension will be documented in this file.
+## 1.4.0
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+### Patch
 
-## [Unreleased]
+- Fix miscolored decorators.
+
+Feedback, suggestions, comments appreciated.
+
+**Please feel free to request changes or leave feedback.**
+
+---
+
+## 1.3.0
+
+### Patch
+
+- Fix peekview colorization.
+
+**Please feel free to request changes or leave feedback.**
+
+---
+
+## 1.2.0
+
+### Patch
+
+- Fix miscolored decorators.
+
+Feedback, suggestions, comments appreciated.
+
+**Please feel free to request changes or leave feedback.**
+
+---
+## 1.1.0
 
 - Initial release
+
+**Please feel free to request changes or leave feedback.**

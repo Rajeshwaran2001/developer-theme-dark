@@ -1,8 +1,8 @@
 {
     "name": "developer-theme-dark",
-    "displayName": "Developer theme dark",
-    "description": "A theme suitable to teach code online in dark mode.Inspired by Hitesh Choudhary Vs code Theme.",
-    "version": "1.3.0",
+    "displayName": "Developer's theme",
+    "description": "A theme suitable to teach code online in dark mode",
+    "version": "1.4.0",
     "publisher": "Rajeshwaran",
     "author": {
         "name": "Rajeshwaran"
@@ -26,10 +26,12 @@
         "Dark Theme",
         "Code Tutorial",
         "Developer's Dark Theme",
-        "Rajesh",
+        "theme",
         "Coders Theme",
         "Programmers Theme",
-        "Dark Theme contrast"
+        "Dark Theme lovers",
+        "color-theme",
+        "dark"
     ],
     "contributes": {
         "themes": [
