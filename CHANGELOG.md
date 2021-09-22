@@ -1,8 +1,21 @@
 # ChangeLog
 
-## 1.5.0
+## 1.5.1
 
 ### Patch
+
+- Vscode engines level is lower to support on older vscode.
+
+Feedback, suggestions, comments appreciated.
+
+**Please feel free to request changes or leave feedback.**
+**Please feel free to contact me for updates and for requests for new features.**
+
+---
+
+## 1.5.0
+
+### minor
 
 - Fix miscolored elements.
 
@@ -15,7 +28,7 @@ Feedback, suggestions, comments appreciated.
 
 ## 1.4.0
 
-### Patch
+### minor
 
 - Fix miscolored decorators.
 
@@ -27,7 +40,7 @@ Feedback, suggestions, comments appreciated.
 
 ## 1.3.0
 
-### Patch
+### minor
 
 - Fix peekview colorization.
 
@@ -37,7 +50,7 @@ Feedback, suggestions, comments appreciated.
 
 ## 1.2.0
 
-### Patch
+### minor
 
 - Fix miscolored decorators.
 
