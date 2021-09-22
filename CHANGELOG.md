@@ -1,5 +1,18 @@
 # ChangeLog
 
+## 1.5.0
+
+### Patch
+
+- Fix miscolored elements.
+
+Feedback, suggestions, comments appreciated.
+
+**Please feel free to request changes or leave feedback.**
+**Please feel free to contact me for updates and for requests for new features.**
+
+---
+
 ## 1.4.0
 
 ### Patch
