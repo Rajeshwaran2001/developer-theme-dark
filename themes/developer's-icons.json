@@ -1,0 +1,19 @@
+{
+	"fonts": [
+		{
+			"id": "fluent-icons",
+			"src": [
+				{
+					"path": "./fluent-icons.ttf",
+					"format": "truetype"
+				}
+			],
+			"weight": "normal",
+			"style": "normal"
+		}
+	],
+	"iconDefinitions": {
+
+        
+	}
+}
