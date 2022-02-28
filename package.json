@@ -53,5 +53,8 @@
     },
     "dependencies": {
         "release-it": "^14.12.4"
-    }
+    },
+    "scripts": {
+        "vscode:prepublish": "tsc"
+      }
 }
