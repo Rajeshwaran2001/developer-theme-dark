@@ -1,10 +1,10 @@
 {
 	"fonts": [
 		{
-			"id": "fluent-icons",
+			"id": "developer's-icons",
 			"src": [
 				{
-					"path": "./fluent-icons.ttf",
+					"path": "./developer's-icons.ttf",
 					"format": "truetype"
 				}
 			],
