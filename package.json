@@ -53,12 +53,12 @@
     },
     "scripts": {
         "release": "release-it",
-        "clean": "rm -rf dist && mkdir dist",
+        "clean": "clean.bat",
         "svgo": "svgo -f src/icons/ --config config.yml",
         "export-to-csv": "node src/export/index.js -f dist/developers-icons.ttf > dist/developers-icons.csv",
         "fonts": "icon-font-generator src/icons/*.svg -o dist -n developers-icons -p developers-icons --csstp src/template/styles.hbs --height=1000 --center --codepoints src/template/mapping.json --json false --types 'ttf'",
-        "copy":"copy.bat",
-        "dev": " npm run svgo && npm run fonts -- --html true --htmltp src/template/preview.hbs && npm run export-to-csv && npm run copy"
+        "copy": "copy.bat",
+        "dev": "npm run clean && npm run svgo && npm run fonts -- --html true --htmltp src/template/preview.hbs && npm run export-to-csv && npm run copy"
     },
     "devDependencies": {
         "handlebars": ">=4.7.7",
@@ -67,6 +67,8 @@
         "minimist": "^1.2.3",
         "opentype.js": "^0.6.6",
         "release-it": "^14.12.5",
-        "svgo": "^1.3.2"
+        "svgo": "^1.3.2",
+        "underscore": ">=1.12.1",
+        "xmldom": ">=0.5.0"
     }
 }

@@ -41,7 +41,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["minimist", "npm:1.2.5"],
             ["opentype.js", "npm:0.6.9"],
             ["release-it", "npm:14.12.5"],
-            ["svgo", "npm:1.3.2"]
+            ["svgo", "npm:1.3.2"],
+            ["underscore", "npm:1.13.2"],
+            ["xmldom", "npm:0.6.0"]
           ],
           "linkType": "SOFT",
         }]
@@ -1417,7 +1419,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["minimist", "npm:1.2.5"],
             ["opentype.js", "npm:0.6.9"],
             ["release-it", "npm:14.12.5"],
-            ["svgo", "npm:1.3.2"]
+            ["svgo", "npm:1.3.2"],
+            ["underscore", "npm:1.13.2"],
+            ["xmldom", "npm:0.6.0"]
           ],
           "linkType": "SOFT",
         }]
@@ -5268,6 +5272,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/xmldom-npm-0.1.31-86b5d5022f-3073ca4a09.zip/node_modules/xmldom/",
           "packageDependencies": [
             ["xmldom", "npm:0.1.31"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:0.6.0", {
+          "packageLocation": "./.yarn/cache/xmldom-npm-0.6.0-59d30a71e1-710f64f5b2.zip/node_modules/xmldom/",
+          "packageDependencies": [
+            ["xmldom", "npm:0.6.0"]
           ],
           "linkType": "HARD",
         }]
