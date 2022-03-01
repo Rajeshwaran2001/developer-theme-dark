@@ -1,1 +1,1 @@
-copy dist\developers-icons.ttf themes/developers-icons.ttf
+copy dist\developer-icons.ttf themes/developer-icons.ttf
