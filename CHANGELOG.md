@@ -2,6 +2,37 @@
 
 ## 1.5.3
 
+### Pre-releases
+
+- Product icons updates
+
+Feedback, suggestions, comments appreciated.
+
+**Send Me your Feedbacks to rajeshwaran1718@gmail.com**
+
+**Please feel free to request changes or leave feedback.**
+**Please feel free to contact me for updates and for requests for new features.**
+
+---
+
+
+## 1.5.34
+
+### Pre-releases
+
+- Product icons added
+
+Feedback, suggestions, comments appreciated.
+
+**Send Me your Feedbacks to rajeshwaran1718@gmail.com**
+
+**Please feel free to request changes or leave feedback.**
+**Please feel free to contact me for updates and for requests for new features.**
+
+---
+
+## 1.5.3
+
 ### Patch
 
 - Minor color fixes
