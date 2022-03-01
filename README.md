@@ -5,6 +5,6 @@
 > A dark theme for [Visual Studio Code](http://code.visualstudio.com).
 
 ## Preview of theme and colors
-![Screenshot](https://raw.githubusercontent.com/Rajeshwaran2001/developer-theme-dark/main/assest/screenshot.png)
+![Screenshot](https://postimg.cc/nXTLN63F)
 
 > Not too bright and not too subtle. 
