@@ -53,6 +53,9 @@
     },
     "scripts": {
         "pre": "vsce publish --pre-release --no-yarn",
+        "minor": "vsce publish minor --no-yarn",
+        "major": "vsce publish --pre-release --no-yarn",
+        "patch": "vsce publish --pre-release --no-yarn",
         "release": "release-it",
         "clean": "clean.bat",
         "svgo": "svgo -f src/icons/ --config config.yml",

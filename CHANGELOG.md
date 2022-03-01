@@ -18,7 +18,7 @@ Feedback, suggestions, comments appreciated.
 
 ## 1.6.0
 
-### Pre-releases
+### Minor
 
 - Product icons added
 
