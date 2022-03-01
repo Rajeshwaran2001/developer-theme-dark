@@ -1,6 +1,6 @@
 # ChangeLog
 
-## 1.5.3
+## 1.6.0
 
 ### Pre-releases
 
