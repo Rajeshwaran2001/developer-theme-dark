@@ -1,6 +1,6 @@
 # ChangeLog
 
-## 1.6.0
+## 1.6.1
 
 ### Pre-releases
 
@@ -16,7 +16,7 @@ Feedback, suggestions, comments appreciated.
 ---
 
 
-## 1.5.34
+## 1.6.0
 
 ### Pre-releases
 
