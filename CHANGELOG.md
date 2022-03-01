@@ -1,5 +1,36 @@
 # ChangeLog
 
+## 1.6.1
+
+### Pre-releases
+
+- Product icons updates
+
+Feedback, suggestions, comments appreciated.
+
+**Send Me your Feedbacks to rajeshwaran1718@gmail.com**
+
+**Please feel free to request changes or leave feedback.**
+**Please feel free to contact me for updates and for requests for new features.**
+
+---
+
+
+## 1.6.0
+
+### Minor
+
+- Product icons added
+
+Feedback, suggestions, comments appreciated.
+
+**Send Me your Feedbacks to rajeshwaran1718@gmail.com**
+
+**Please feel free to request changes or leave feedback.**
+**Please feel free to contact me for updates and for requests for new features.**
+
+---
+
 ## 1.5.3
 
 ### Patch

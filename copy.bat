@@ -1,0 +1,1 @@
+copy dist\developer-icons.ttf themes/developer-icons.ttf

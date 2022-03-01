@@ -2,7 +2,7 @@
     "name": "developer-theme-dark",
     "displayName": "Developer's theme",
     "description": "A theme suitable to teach code online in dark mode",
-    "version": "1.5.3",
+    "version": "1.6.1",
     "publisher": "Rajeshwaran",
     "author": {
         "name": "Rajeshwaran"
@@ -45,13 +45,33 @@
         ],
         "productIconThemes": [
             {
-                "id": "developer's-icons",
+                "id": "developer-icons",
                 "label": "Developer's Icons",
                 "path": "./themes/developer's-icons.json"
             }
         ]
     },
-    "dependencies": {
-        "release-it": "^14.12.4"
+    "scripts": {
+        "pre": "vsce publish --pre-release --no-yarn",
+        "minor": "vsce publish minor --no-yarn",
+        "major": "vsce publish --pre-release --no-yarn",
+        "patch": "vsce publish --pre-release --no-yarn",
+        "release": "release-it",
+        "clean": "clean.bat",
+        "svgo": "svgo -f src/icons/ --config config.yml",
+        "export-to-csv": "node src/export/index.js -f dist/developer-icons.ttf > dist/developer-icons.csv",
+        "fonts": "icon-font-generator src/icons/*.svg -o dist -n developer-icons -p developer-icons --csstp src/template/styles.hbs --htmltp src/template/preview.hbs --height=1000 --center --codepoints src/template/mapping.json --json false --types 'ttf'",
+        "copy": "copy.bat",
+        "dev": "npm run clean && npm run svgo && npm run fonts && npm run export-to-csv && npm run copy"
+    },
+    "devDependencies": {
+        "handlebars": ">=4.7.7",
+        "icon-font-generator": "^2.1.10",
+        "lodash": ">=4.17.21",
+        "minimist": "^1.2.3",
+        "opentype.js": "^0.6.6",
+        "svgo": "1.3.2",
+        "underscore": ">=1.12.1",
+        "xmldom": ">=0.5.0"
     }
 }
