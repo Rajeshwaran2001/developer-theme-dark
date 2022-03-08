@@ -38,7 +38,7 @@
     "contributes": {
         "themes": [
             {
-                "label": "Developers Theme dark",
+                "label": "Developers Theme",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Developers Theme dark-color-theme.json"
             }
