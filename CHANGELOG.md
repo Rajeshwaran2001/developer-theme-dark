@@ -6,9 +6,9 @@
 
 - Minor color Changes to the theme
 
-Feedback, suggestions, comments appreciated.
+Feedback, suggestions, comments are appreciated.
 
-**Send Me your Feedbacks to rajeshwaran1718@gmail.com**
+**Send Me your Feedback to rajeshwaran1718@gmail.com**
 
 **Please feel free to request changes or leave feedback.**
 **Please feel free to contact me for updates and for requests for new features.**
