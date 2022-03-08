@@ -47,7 +47,7 @@
             {
                 "id": "developer-icons",
                 "label": "Developer's Icons",
-                "path": "./themes/developer's-icons.json"
+                "path": "./product_icons/developer's-icons.json"
             }
         ]
     },
