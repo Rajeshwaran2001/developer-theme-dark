@@ -56,6 +56,7 @@
         "minor": "vsce publish minor --no-yarn",
         "major": "vsce publish major --no-yarn",
         "patch": "vsce publish patch --no-yarn",
+        "pkg": "vsce package --no-yarn",
         "release": "release-it",
         "clean": "clean.bat",
         "svgo": "svgo -f src/icons/ --config config.yml",
