@@ -58,11 +58,11 @@
         "patch": "vsce publish patch --no-yarn",
         "pkg": "vsce package --no-yarn",
         "release": "release-it",
-        "clean": "clean.bat",
+        "clean": "src/script/clean.bat",
         "svgo": "svgo -f src/icons/ --config config.yml",
-        "export-to-csv": "node src/export/index.js -f dist/developer-icons.ttf > dist/developer-icons.csv",
-        "fonts": "icon-font-generator src/icons/*.svg -o dist -n developer-icons -p developer-icons --csstp src/template/styles.hbs --htmltp src/template/preview.hbs --height=1000 --center --codepoints src/template/mapping.json --json false --types 'ttf'",
-        "copy": "copy.bat",
+        "export-to-csv": "node src/script/export/index.js -f dist/developer-icons.ttf > dist/developer-icons.csv",
+        "fonts": "icon-font-generator src/icons/*.svg -o dist -n developer-icons -p developer-icons --csstp src/script/template/styles.hbs --htmltp src/script/template/preview.hbs --height=1000 --center --codepoints src/script/template/mapping.json --json false --types 'ttf'",
+        "copy": "src/script/copy.bat",
         "dev": "npm run clean && npm run svgo && npm run fonts && npm run export-to-csv && npm run copy"
     },
     "devDependencies": {
