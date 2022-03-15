@@ -1,5 +1,10 @@
 .vscode/**
 .vscode-test/**
 .gitignore
+.gitattributes
 vsc-extension-quickstart.md
 .yarn/**
+.yarn-meta
+.pnp.cjs
+.pnp
+.pnp.loader.mjs
