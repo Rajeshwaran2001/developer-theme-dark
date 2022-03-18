@@ -19,7 +19,7 @@ export const createScreenshot = async (filePath: string, fileName: string) => {
     await page.goto(htmlFilePath);
 
     await page.screenshot({
-      path: `images/${fileName}.png`,
+      path: `assest/${fileName}.png`,
       omitBackground: true,
       fullPage: true,
     });

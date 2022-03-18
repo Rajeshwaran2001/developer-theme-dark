@@ -7,3 +7,4 @@ node_modules
 *.pnp.loader.mjs
 package-lock.json
 yarn.lock
+yarn-error.log
