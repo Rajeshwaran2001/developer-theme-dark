@@ -58,12 +58,12 @@
         "patch": "vsce publish patch --no-yarn",
         "pkg": "vsce package --no-yarn",
         "release": "release-it",
-        "clean": "src/script/clean.bat",
-        "svgo-p": "svgo -f src/p-icons/ --config config.yml",
-        "svgo-mf": "svgo -i src/m-icons -o icons -q",
-        "export-to-csv": "node src/script/export/index.js -f dist/developer-icons.ttf > dist/developer-icons.csv",
-        "fonts": "icon-font-generator src/p-icons/*.svg -o dist -n developer-icons -p developer-icons --csstp src/script/template/styles.hbs --htmltp src/script/template/preview.hbs --height=1000 --center --codepoints src/script/template/mapping.json --json false --types 'ttf'",
-        "copy": "src/script/copy.bat",
+        "clean": "src/scripts/clean.bat",
+        "svgo-p": "svgo -f src/icons-svg/p-icons/ --config config.yml",
+        "svgo-mf": "svgo -i src/icons-svg/m-icons -o icons -q",
+        "export-to-csv": "node src/scripts/export/index.js -f dist/developer-icons.ttf > dist/developer-icons.csv",
+        "fonts": "icon-font-generator src/p-icons/*.svg -o dist -n developer-icons -p developer-icons --csstp src/scripts/template/styles.hbs --htmltp src/scripts/template/preview.hbs --height=1000 --center --codepoints src/script/template/mapping.json --json false --types 'ttf'",
+        "copy": "src/scripts/copy.bat",
         "dev": "npm run clean && npm run svgo && npm run fonts && npm run export-to-csv && npm run copy"
     },
     "devDependencies": {
