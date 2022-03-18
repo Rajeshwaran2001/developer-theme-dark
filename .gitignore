@@ -1,9 +1,9 @@
 node_modules
 *.vsix
 *.yarn
-.yarn-meta
-.pnp.cjs
-.pnp
-.pnp.loader.mjs
+*.yarn-meta
+*.pnp.cjs
+*.pnp
+*.pnp.loader.mjs
 package-lock.json
 yarn.lock
