@@ -49,6 +49,13 @@
                 "label": "Developer's Icons",
                 "path": "./product_icons/developer's-icons.json"
             }
+        ],
+        "iconThemes": [
+            {
+                "id": "developer-file-icons",
+                "label": "Developer's File Icons",
+                "path": "./file_icons/developer-icons.json"
+            }
         ]
     },
     "scripts": {
@@ -58,12 +65,12 @@
         "patch": "vsce publish patch --no-yarn",
         "pkg": "vsce package --no-yarn",
         "release": "release-it",
-        "clean": "src/scripts/clean.bat",
+        "clean": "src/scripts/batch/clean.bat",
         "svgo-p": "svgo -f src/icons-svg/p-icons/ --config config.yml",
         "svgo-mf": "svgo -i src/icons-svg/m-icons -o icons -q",
         "export-to-csv": "node src/scripts/export/index.js -f dist/developer-icons.ttf > dist/developer-icons.csv",
         "fonts": "icon-font-generator src/p-icons/*.svg -o dist -n developer-icons -p developer-icons --csstp src/scripts/template/styles.hbs --htmltp src/scripts/template/preview.hbs --height=1000 --center --codepoints src/script/template/mapping.json --json false --types 'ttf'",
-        "copy": "src/scripts/copy.bat",
+        "copy": "src/scripts/batch/copy.bat",
         "dev": "npm run clean && npm run svgo-p && npm run fonts && npm run export-to-csv && npm run copy",
         "compile": "webpack --config ./build/webpack.config.js --mode production",
         "package-web": "webpack --mode production --devtool hidden-source-map --config ./build/web-extension.webpack.config.js",

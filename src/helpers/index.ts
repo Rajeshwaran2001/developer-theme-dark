@@ -12,7 +12,7 @@ export const getConfig = (section?: string) => {
 
 /** Get list of configuration entries of package.json */
 export const getConfigProperties = (): { [config: string]: unknown } => {
-  return vscode.extensions.getExtension('PKief.material-icon-theme')
+  return vscode.extensions.getExtension('Rajeshwaran.developer-icon-theme')
     ?.packageJSON?.contributes?.configuration?.properties;
 };
 
@@ -26,7 +26,7 @@ export const setConfig = (
 };
 
 export const getThemeConfig = (section: string) => {
-  return getConfig('material-icon-theme').inspect(section);
+  return getConfig('developer-icon-theme').inspect(section);
 };
 
 /** Set the config of the theme. */
@@ -35,7 +35,7 @@ export const setThemeConfig = (
   value: any,
   global: boolean = false
 ) => {
-  return getConfig('material-icon-theme').update(section, value, global);
+  return getConfig('developer-icon-theme').update(section, value, global);
 };
 
 /**
@@ -45,9 +45,9 @@ export const setThemeConfig = (
 export const isThemeActivated = (global: boolean = false): boolean => {
   return global
     ? getConfig().inspect('workbench.iconTheme')?.globalValue ===
-        'material-icon-theme'
+        'developer-icon-theme'
     : getConfig().inspect('workbench.iconTheme')?.workspaceValue ===
-        'material-icon-theme';
+        'developer-icon-theme';
 };
 
 /** Checks if the theme is not the active icon theme */
@@ -61,8 +61,8 @@ export const isThemeNotVisible = (): boolean => {
 
 /** Return the path of the extension in the file system. */
 export const getExtensionPath = () =>
-  vscode.extensions.getExtension('PKief.material-icon-theme')?.extensionPath ??
-  '';
+  vscode.extensions.getExtension('Rajeshwaran.developer-icon-theme')
+    ?.extensionPath ?? '';
 
 /** Get the configuration of the icons as JSON Object */
 export const getMaterialIconsJSON = (): IconConfiguration => {

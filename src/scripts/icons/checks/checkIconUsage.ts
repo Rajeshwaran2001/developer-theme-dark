@@ -14,7 +14,7 @@ import * as painter from './../../helpers/painter';
 /**
  * Defines the folder where all icon files are located.
  */
-const folderPath = path.join('icons');
+const folderPath = path.join('src/icons-svg/m-icons');
 
 /**
  * Defines an array with all icons that can be found in the file system.

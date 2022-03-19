@@ -1,12 +1,12 @@
 /**
  * Path where the icons are located.
  */
-export const iconFolderPath: string = './../icons/';
+export const iconFolderPath: string = './../icons-svg/icons/';
 
 /**
  * File name of the JSON file that will be generated to the out folder.
  */
-export const iconJsonName: string = 'material-icons.json';
+export const iconJsonName: string = '../file_icons/developer-icons.json';
 
 /**
  * File ending for opened folders.
