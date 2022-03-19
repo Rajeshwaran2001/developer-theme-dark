@@ -28,9 +28,9 @@ const createHTMLTableBodyRows = (items: IconDefinition[][]) => {
       .map(
         (icon) => `
             <td class="icon">
-                <img src="./../../../icons/${icon.iconName}.svg" alt="${
-          icon.label
-        }">
+                <img src="./../../icons-svg/m-icons/${
+                  icon.iconName
+                }.svg" alt="${icon.label}">
             </td>
             <td class="iconName">${toTitleCase(icon.label)}</td>
         `
