@@ -1,0 +1,4 @@
+{
+  "repositoryUrl": "https://github.com/Rajeshwaran2001/developer-theme-dark",
+  "blacklistPattern": "^Release \\d+\\.\\d+\\.\\d+|^\\d+\\.\\d+\\.\\d+$"
+}

@@ -49,6 +49,13 @@
                 "label": "Developer's Icons",
                 "path": "./product_icons/developer's-icons.json"
             }
+        ],
+        "iconThemes": [
+            {
+                "id": "developer-file-icons",
+                "label": "Developer's File Icons",
+                "path": "./file_icons/developer-icons.json"
+            }
         ]
     },
     "scripts": {
@@ -74,8 +81,8 @@
         "preversion": "npm run contributors && git add assest/contributors.png && npm run preview && git add assest/fileIcons.png && git add assest/folderIcons.png",
         "version": "npm run changelog && git add CHANGELOG.md",
         "vscode:prepublish": "npm run lint && npm run compile && npm run package-web"
-      },
-      "devDependencies": {
+    },
+    "devDependencies": {
         "handlebars": ">=4.7.7",
         "icon-font-generator": "^2.1.11",
         "lodash": ">=4.17.21",
@@ -107,5 +114,6 @@
         "prettier": "^2.5.0",
         "puppeteer": "^11.0.0",
         "rimraf": "^3.0.2"
-      }
-    }
+  }
+}
+
