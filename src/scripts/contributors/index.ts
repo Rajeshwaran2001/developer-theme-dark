@@ -46,7 +46,7 @@ const fetchContributors = (
         res.headers?.link?.toString() ?? ''
       );
       console.log(
-        '> Material Icon Theme:',
+        '> Develioper Icon Theme:',
         painter.yellow(
           `[${page}/${
             lastPage ? lastPage[1] : +prevPage[1] + 1
@@ -113,7 +113,7 @@ const init = async () => {
     );
   } else {
     console.log(
-      '> Material Icon Theme:',
+      '> Developer Icon Theme:',
       painter.red('Error: Could not fetch contributors from GitHub!')
     );
     throw Error();
