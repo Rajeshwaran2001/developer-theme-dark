@@ -16,16 +16,12 @@
 
 > Not too bright and not too subtle. 
 
-![Sample Screenshot](https://raw.githubusercontent.com/Rajeshwaran2001/developer-theme-dark/main/assest/theme_sample.png)
+<img src="https://raw.githubusercontent.com/Rajeshwaran2001/developer-theme-dark/main/assest/theme.png" alt="Developer Theme Prev" />
 
-&nbsp;
-# Preview of theme and colors
-&nbsp;
+### Product icons
 
-<img src="https://raw.githubusercontent.com/Rajeshwaran2001/developer-theme-dark/main/assest/product_icon_sample.png" alt="Product Icons Prev" style="width:200px;"/>
-&nbsp;
+<img src="https://raw.githubusercontent.com/Rajeshwaran2001/developer-theme-dark/main/assest/producticon.png" alt="Product Icons">
 
-![Product Icons](https://raw.githubusercontent.com/Rajeshwaran2001/developer-theme-dark/main/assest/product_icons.png)
 
 
 ### File icons
