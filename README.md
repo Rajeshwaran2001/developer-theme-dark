@@ -10,6 +10,7 @@
     <a href="https://marketplace.visualstudio.com/items?itemName=Rajeshwaran.developer-theme-dark"><img src=https://vsmarketplacebadge.apphb.com/rating-short/Rajeshwaran.developer-theme-dark.svg?style=for-the-badge&colorA=252526&colorB=43A047&label=Rating" alt="Rating"></a>&nbsp;
     <a href="https://marketplace.visualstudio.com/items?itemName=Rajeshwaran.developer-theme-dark"><img src="https://vsmarketplacebadge.apphb.com/installs-short/Rajeshwaran.developer-theme-dark.svg?style=for-the-badge&colorA=252526&colorB=43A047&label=Installs" alt="Installs"></a>&nbsp;
     <a href="https://marketplace.visualstudio.com/items?itemName=Rajeshwaran.developer-theme-dark"><img src="https://vsmarketplacebadge.apphb.com/downloads-short/Rajeshwaran.developer-theme-dark.svg?style=for-the-badge&colorA=252526&colorB=43A047&label=Downloads" alt="Downloads"></a>
+    <a href="https://marketplace.visualstudio.com/items?itemName=Rajeshwaran.developer-theme-dark"><img src="https://vsmarketplacebadge.apphb.com/trending-monthly/Rajeshwaran.developer-theme-dark.svg?style=for-the-badge&colorA=252526&colorB=43A047&label=Trending" alt="Trending"></a>
 </p>
 
 # Preview of theme and colors
