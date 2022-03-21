@@ -67,6 +67,7 @@
         "clean": "src/scripts/batch/clean.bat",
         "svgo-p": "svgo -f Pro-icons/ --config config.yml",
         "svgo-mf": "svgo -i icons -o icons -q",
+        "test": "node ./out/test/runTest.js",
         "export-to-csv": "node src/scripts/export/index.js -f dist/developer-icons.ttf > dist/developer-icons.csv",
         "fonts": "icon-font-generator Pro-icons/*.svg -o dist -n developer-icons -p developer-icons --csstp src/scripts/template/styles.hbs --htmltp src/scripts/template/preview.hbs --height=1000 --center --codepoints src/scripts/template/mapping.json --json false --types 'ttf'",
         "copy": "src/scripts/batch/copy.bat",
