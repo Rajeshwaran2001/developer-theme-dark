@@ -39,6 +39,6 @@ jobs:
             ${{ runner.os }}-
       - name: Test + Build 🚀
         run: |
-          npm run vscode:prepublish
+          npm run dev-file
         env:
           DISPLAY: ':99.0'
