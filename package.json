@@ -12,6 +12,7 @@
         "type": "git",
         "url": "https://github.com/Rajeshwaran2001/developer-theme-dark.git"
     },
+    "homepage": "https://github.com/Rajeshwaran2001/developer-theme-dark/blob/main/README.md",
     "galleryBanner": {
         "color": "#650681",
         "theme": "dark"
@@ -33,7 +34,10 @@
         "color-theme",
         "dark",
         "icon",
-        "product"
+        "product",
+        "icon-theme",
+        "product-icon-theme",
+        "customization"
     ],
     "contributes": {
         "themes": [
@@ -52,27 +56,19 @@
         ],
         "iconThemes": [
             {
-                "id": "developer-file-icons",
+                "id": "developer-icon-theme",
                 "label": "Developer's File Icons",
                 "path": "./file_icons/developer-icons.json"
             }
         ]
     },
     "scripts": {
-        "pre": "vsce publish --pre-release --no-yarn",
-        "minor": "vsce publish minor --no-yarn",
-        "major": "vsce publish major --no-yarn",
-        "patch": "vsce publish patch --no-yarn",
-        "pkg": "vsce package --no-yarn",
         "clean": "src/scripts/batch/clean.bat",
         "svgo-p": "svgo -f Pro-icons/ --config config.yml",
         "svgo-mf": "svgo -i icons -o icons -q",
         "export-to-csv": "node src/scripts/export/index.js -f dist/developer-icons.ttf > dist/developer-icons.csv",
         "fonts": "icon-font-generator Pro-icons/*.svg -o dist -n developer-icons -p developer-icons --csstp src/scripts/template/styles.hbs --htmltp src/scripts/template/preview.hbs --height=1000 --center --codepoints src/scripts/template/mapping.json --json false --types 'ttf'",
         "copy": "src/scripts/batch/copy.bat",
-        "dev-pro": "npm run clean && npm run svgo-p && npm run fonts && npm run export-to-csv && npm run copy",
-        "compile": "webpack --config ./build/webpack.config.js --mode production",
-        "package-web": "webpack --mode production --devtool hidden-source-map --config ./build/web-extension.webpack.config.js",
         "contributors": "ts-node ./src/scripts/contributors/index.ts",
         "generateJson": "ts-node ./src/scripts/icons/generateJson.ts",
         "lint": "eslint -c .eslintrc.json --ext .ts ./src/**/*.ts",
@@ -80,7 +76,7 @@
         "changelog": "changelog-machine --config changelog.config.json",
         "preversion": "npm run contributors && git add assest/contributors.png && npm run preview && git add assest/fileIcons.png && git add assest/folderIcons.png",
         "version": "npm run changelog && git add CHANGELOG.md",
-        "dev-file": "npm run lint && npm run compile && npm run package-web"
+        "build": "npm run clean && npm run lint && npm run svgo-p && npm run svgo-mf && npm run fonts && npm run export-to-csv && npm run copy && npm run generateJson"
     },
     "devDependencies": {
         "handlebars": ">=4.7.7",
@@ -95,8 +91,6 @@
         "ts-node": "^10.4.0",
         "typescript": "^4.5.2",
         "vscode-test": "^1.6.1",
-        "webpack": "^5.64.4",
-        "webpack-cli": "^4.9.1",
         "@types/glob": "^7.2.0",
         "@types/lodash.merge": "^4.6.6",
         "@types/mocha": "^9.0.0",
@@ -114,6 +108,6 @@
         "prettier": "^2.5.0",
         "puppeteer": "^11.0.0",
         "rimraf": "^3.0.2"
-  }
+  }  
 }
 

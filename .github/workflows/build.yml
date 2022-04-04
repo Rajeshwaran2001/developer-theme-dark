@@ -39,6 +39,6 @@ jobs:
             ${{ runner.os }}-
       - name: Test + Build 🚀
         run: |
-          npm run dev-file
+          npm run build
         env:
           DISPLAY: ':99.0'

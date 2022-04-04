@@ -4,7 +4,7 @@
 	"colors": {
 		"foreground": "#f8f8f2",
 		"focusBorder": "#596171",
-		"selection.background": "#0078d7",
+		"selection.background": "#0078d7b5",
 		"scrollbar.shadow": "#191e2a",
 		"activityBar.foreground": "#ffffff",
 		"activityBar.background": "#343746",
@@ -55,7 +55,7 @@
 		"menubar.selectionBackground": "#566371",
 		"menubar.selectionBorder": "#ffffff00",
 		"menu.foreground": "#ffe9e9",
-		"menu.background": "#343746",
+		"menu.background": "#343746e1",
 		"menu.selectionForeground": "#ffffff",
 		"menu.selectionBackground": "#0366d6",
 		"menu.selectionBorder": "#fbfbfb00",
@@ -805,7 +805,7 @@
 		  "name": "Variables",
 		  "scope": "variable",
 		  "settings": {
-			"foreground": "#e06c75"
+			"foreground": "#ec535e"
 		  }
 		},
 		{

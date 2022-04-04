@@ -7,6 +7,13 @@
 
 > March 21, 2022 
 
+- Update build.yml [`d855c5d`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/d855c5d)
+- Update build.yml [`23395e3`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/23395e3)
+- Revert "Update package.json" [`abd6bab`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/abd6bab)
+- Update package.json [`9350d44`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/9350d44)
+- package-lock.json add [`8624c91`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/8624c91)
+- workflow added [`079a835`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/079a835)
+- Update CHANGELOG.md [`c68ba03`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/c68ba03)
 - Update README.md [`d9fce8b`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/d9fce8b)
 - product icons prev updated [`a9f98cf`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/a9f98cf)
 - Update README.md [`e4f54da`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/e4f54da)
