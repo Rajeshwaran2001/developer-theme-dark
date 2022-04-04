@@ -63,12 +63,14 @@
         ]
     },
     "scripts": {
-        "clean": "src/scripts/batch/clean.bat",
+        "clear": "src/scripts/batch/clean.bat",
+        "clean": "rm -rf dist && mkdir dist",
         "svgo-p": "svgo -f Pro-icons/ --config config.yml",
         "svgo-mf": "svgo -i icons -o icons -q",
         "export-to-csv": "node src/scripts/export/index.js -f dist/developer-icons.ttf > dist/developer-icons.csv",
         "fonts": "icon-font-generator Pro-icons/*.svg -o dist -n developer-icons -p developer-icons --csstp src/scripts/template/styles.hbs --htmltp src/scripts/template/preview.hbs --height=1000 --center --codepoints src/scripts/template/mapping.json --json false --types 'ttf'",
         "copy": "src/scripts/batch/copy.bat",
+        "move": "sh util.sh",
         "contributors": "ts-node ./src/scripts/contributors/index.ts",
         "generateJson": "ts-node ./src/scripts/icons/generateJson.ts",
         "lint": "eslint -c .eslintrc.json --ext .ts ./src/**/*.ts",
@@ -76,7 +78,7 @@
         "changelog": "changelog-machine --config changelog.config.json",
         "preversion": "npm run contributors && git add assest/contributors.png && npm run preview && git add assest/fileIcons.png && git add assest/folderIcons.png",
         "version": "npm run changelog && git add CHANGELOG.md",
-        "build": "npm run lint && npm run svgo-p && npm run svgo-mf && npm run fonts && npm run export-to-csv && npm run generateJson"
+        "build": "npm run clean && npm run move && npm run lint && npm run svgo-p && npm run svgo-mf && npm run fonts && npm run export-to-csv && npm run generateJson && cp -R dist/developer-icons.ttf product_icons/developer-icons.ttf"
     },
     "devDependencies": {
         "handlebars": ">=4.7.7",
