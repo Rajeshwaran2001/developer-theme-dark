@@ -78,7 +78,7 @@
         "changelog": "changelog-machine --config changelog.config.json",
         "preversion": "npm run contributors && git add assest/contributors.png && npm run preview && git add assest/fileIcons.png && git add assest/folderIcons.png",
         "version": "npm run changelog && git add CHANGELOG.md",
-        "dev": "npm run clean && npm run move && npm run lint && npm run svgo-p && npm run svgo-mf && npm run fonts && npm run export-to-csv && npm run generateJson",
+        "dev": "npm run clean && npm run move && npm run lint && npm run svgo-p && npm run svgo-mf && npm run fonts && npm run export-to-csv && npm run generateJson && cp -R dist/developer-icons.ttf product_icons/developer-icons.ttf",
         "build": "npm run lint && npm run svgo-p && npm run svgo-mf && npm run fonts && npm run export-to-csv && npm run generateJson && cp -R dist/developer-icons.ttf product_icons/developer-icons.ttf"
     },
     "devDependencies": {
