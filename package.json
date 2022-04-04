@@ -76,7 +76,7 @@
         "changelog": "changelog-machine --config changelog.config.json",
         "preversion": "npm run contributors && git add assest/contributors.png && npm run preview && git add assest/fileIcons.png && git add assest/folderIcons.png",
         "version": "npm run changelog && git add CHANGELOG.md",
-        "build": "npm run clean && npm run lint && npm run svgo-p && npm run svgo-mf && npm run fonts && npm run export-to-csv && npm run copy && npm run generateJson"
+        "build": "npm run lint && npm run svgo-p && npm run svgo-mf && npm run fonts && npm run export-to-csv && npm run copy && npm run generateJson"
     },
     "devDependencies": {
         "handlebars": ">=4.7.7",
