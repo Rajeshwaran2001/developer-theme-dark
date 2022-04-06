@@ -3,19 +3,10 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
-#### [v2.0.0](https://github.com/Rajeshwaran2001/developer-theme-dark/compare/1.6.2...v2.0.0) 
+#### [v1.6.2](https://github.com/Rajeshwaran2001/developer-theme-dark/compare/1.6.2...v1.6.2) 
 
-> April 6, 2022 
+> March 21, 2022 
 
-- Update README.md [`d8ec863`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/d8ec863)
-- workflow update [`2edc3d5`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/2edc3d5)
-- workflow improved [`18dcca6`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/18dcca6)
-- Update package.json [`a1cf786`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/a1cf786)
-- workflow improved [`79ea74b`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/79ea74b)
-- build workflow improved [`380fdfd`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/380fdfd)
-- Update package.json [`5bcb3dd`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/5bcb3dd)
-- Update package.json [`d693fd3`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/d693fd3)
-- release workflow created and theme color fix [`750f0d6`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/750f0d6)
 - Update build.yml [`d855c5d`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/d855c5d)
 - Update build.yml [`23395e3`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/23395e3)
 - Revert "Update package.json" [`abd6bab`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/abd6bab)
