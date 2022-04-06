@@ -21,7 +21,7 @@
         "generateJson": "ts-node ./src/scripts/icons/generateJson.ts",
         "lint": "eslint -c .eslintrc.json --ext .ts ./src/**/*.ts",
         "preview-mf": "ts-node ./src/scripts/preview",
-        "preview-p": "ts-node ./src/script/fluenticons/index.ts",
+        "preview-p": "ts-node ./src/script/preview/index.ts",
         "changelog": "changelog-machine --config changelog.config.json",
         "preversion": "npm run contributors && git add assest/contributors.png && npm run preview-mf && git add assest/fileIcons.png && git add assest/folderIcons.png && npm run preview-p && git add images/preview.png",
         "version": "npm run changelog && git add CHANGELOG.md",
