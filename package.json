@@ -7,11 +7,36 @@
     "author": {
         "name": "Rajeshwaran"
     },
+    
+    "scripts": {
+        "clear": "src/scripts/batch/clean.bat",
+        "clean": "rm -rf dist && mkdir dist",
+        "svgo-p": "svgo -f Pro-icons/ --config config.yml",
+        "svgo-mf": "svgo -i icons -o icons -q",
+        "export-to-csv": "node src/scripts/export/index.js -f dist/developer-icons.ttf > dist/developer-icons.csv",
+        "fonts": "icon-font-generator Pro-icons/*.svg -o dist -n developer-icons -p developer-icons --csstp src/scripts/template/styles.hbs --htmltp src/scripts/template/preview.hbs --height=1000 --center --codepoints src/scripts/template/mapping.json --json false --types 'ttf'",
+        "copy": "src/scripts/batch/copy.bat",
+        "move": "sh util.sh",
+        "contributors": "ts-node ./src/scripts/contributors/index.ts",
+        "generateJson": "ts-node ./src/scripts/icons/generateJson.ts",
+        "lint": "eslint -c .eslintrc.json --ext .ts ./src/**/*.ts",
+        "preview-mf": "ts-node ./src/scripts/preview",
+        "preview-p": "ts-node ./src/script/fluenticons/index.ts",
+        "changelog": "changelog-machine --config changelog.config.json",
+        "preversion": "npm run contributors && git add assest/contributors.png && npm run preview-mf && git add assest/fileIcons.png && git add assest/folderIcons.png && npm run preview-p && git add images/preview.png",
+        "version": "npm run changelog && git add CHANGELOG.md",
+        "dev": "npm run clean && npm run move && npm run lint && npm run svgo-p && npm run svgo-mf && npm run fonts && npm run export-to-csv && npm run generateJson && cp -R dist/developer-icons.ttf product_icons/developer-icons.ttf",
+        "build": "npm run lint && npm run svgo-p && npm run svgo-mf && npm run fonts && npm run export-to-csv && npm run generateJson && cp -R dist/developer-icons.ttf product_icons/developer-icons.ttf"
+    },
+
     "icon": "assest/logo.ico",
     "repository": {
         "type": "git",
         "url": "https://github.com/Rajeshwaran2001/developer-theme-dark.git"
     },
+    "bugs": {
+        "url": "https://github.com/PKief/vscode-material-product-icons/issues"
+      },
     "homepage": "https://github.com/Rajeshwaran2001/developer-theme-dark/blob/main/README.md",
     "galleryBanner": {
         "color": "#650681",
@@ -27,17 +52,19 @@
         "Dark Theme",
         "Code Tutorial",
         "Developer's Dark Theme",
-        "theme",
+        "Theme",
+        "Material",
+        "Fluent",
         "Coders Theme",
         "Programmers Theme",
         "Dark Theme lovers",
-        "color-theme",
-        "dark",
-        "icon",
-        "product",
-        "icon-theme",
-        "product-icon-theme",
-        "customization"
+        "Color-theme",
+        "Dark",
+        "Icon",
+        "Product",
+        "Icon-theme",
+        "Product-icon-theme",
+        "Customization"
     ],
     "contributes": {
         "themes": [
@@ -62,25 +89,6 @@
             }
         ]
     },
-    "scripts": {
-        "clear": "src/scripts/batch/clean.bat",
-        "clean": "rm -rf dist && mkdir dist",
-        "svgo-p": "svgo -f Pro-icons/ --config config.yml",
-        "svgo-mf": "svgo -i icons -o icons -q",
-        "export-to-csv": "node src/scripts/export/index.js -f dist/developer-icons.ttf > dist/developer-icons.csv",
-        "fonts": "icon-font-generator Pro-icons/*.svg -o dist -n developer-icons -p developer-icons --csstp src/scripts/template/styles.hbs --htmltp src/scripts/template/preview.hbs --height=1000 --center --codepoints src/scripts/template/mapping.json --json false --types 'ttf'",
-        "copy": "src/scripts/batch/copy.bat",
-        "move": "sh util.sh",
-        "contributors": "ts-node ./src/scripts/contributors/index.ts",
-        "generateJson": "ts-node ./src/scripts/icons/generateJson.ts",
-        "lint": "eslint -c .eslintrc.json --ext .ts ./src/**/*.ts",
-        "preview": "ts-node ./src/scripts/preview",
-        "changelog": "changelog-machine --config changelog.config.json",
-        "preversion": "npm run contributors && git add assest/contributors.png && npm run preview && git add assest/fileIcons.png && git add assest/folderIcons.png",
-        "version": "npm run changelog && git add CHANGELOG.md",
-        "dev": "npm run clean && npm run move && npm run lint && npm run svgo-p && npm run svgo-mf && npm run fonts && npm run export-to-csv && npm run generateJson && cp -R dist/developer-icons.ttf product_icons/developer-icons.ttf",
-        "build": "npm run lint && npm run svgo-p && npm run svgo-mf && npm run fonts && npm run export-to-csv && npm run generateJson && cp -R dist/developer-icons.ttf product_icons/developer-icons.ttf"
-    },
     "devDependencies": {
         "handlebars": ">=4.7.7",
         "icon-font-generator": "^2.1.11",
@@ -92,7 +100,7 @@
         "xmldom": ">=0.5.0",
         "ts-loader": "^9.2.6",
         "ts-node": "^10.4.0",
-        "typescript": "^4.5.2",
+        "typescript": "^4.5.4",
         "vscode-test": "^1.6.1",
         "@types/glob": "^7.2.0",
         "@types/lodash.merge": "^4.6.6",
@@ -102,14 +110,14 @@
         "@types/vscode": "~1.51.0",
         "@typescript-eslint/eslint-plugin": "^5.4.0",
         "@typescript-eslint/parser": "^5.4.0",
-        "changelog-machine": "^1.0.0",
+        "changelog-machine": "^1.0.2",
         "eslint": "^8.3.0",
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-prettier": "^4.0.0",
         "glob": "^7.2.0",
         "mocha": "^9.1.3",
         "prettier": "^2.5.0",
-        "puppeteer": "^11.0.0",
+        "puppeteer": "^13.0.1",
         "rimraf": "^3.0.2"
   }  
 }
