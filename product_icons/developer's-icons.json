@@ -304,6 +304,9 @@
 		},
 		"layout-panel": {
 			"fontCharacter": "\\043e"
-		}
+		},
+		 "source-control-view-icon": {
+			"fontCharacter": "\\2712"
+		 }
 	}
 }
