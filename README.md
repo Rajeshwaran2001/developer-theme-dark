@@ -23,7 +23,7 @@
 
 ### Product icons
 
-<img src="https://raw.githubusercontent.com/Rajeshwaran2001/developer-theme-dark/main/assest/producticon.png" alt="Product Icons">
+<img src="https://raw.githubusercontent.com/Rajeshwaran2001/developer-theme-dark/main/assest/preview.png" alt="Product Icons">
 
 
 
