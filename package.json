@@ -2,7 +2,7 @@
     "name": "developer-theme-dark",
     "displayName": "Developer's theme",
     "description": "A theme suitable to teach code online in dark mode",
-    "version": "1.6.2",
+    "version": "2.0.0",
     "publisher": "Rajeshwaran",
     "author": {
         "name": "Rajeshwaran"
@@ -111,6 +111,5 @@
         "prettier": "^2.5.0",
         "puppeteer": "^11.0.0",
         "rimraf": "^3.0.2"
-  }  
+    }
 }
-

@@ -3,10 +3,24 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
-#### [v1.6.2](https://github.com/Rajeshwaran2001/developer-theme-dark/compare/1.6.2...v1.6.2) 
+#### [v2.0.0](https://github.com/Rajeshwaran2001/developer-theme-dark/compare/1.6.2...v2.0.0) 
 
-> March 21, 2022 
+> April 20, 2022 
 
+- logo update [`368f439`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/368f439)
+- preview update [`82e9666`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/82e9666)
+- Update producticon.png [`c26f629`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/c26f629)
+- Revert "v2.0.0" [`1bb98be`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/1bb98be)
+- v2.0.0 [`06976df`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/06976df)
+- Update README.md [`d8ec863`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/d8ec863)
+- workflow update [`2edc3d5`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/2edc3d5)
+- workflow improved [`18dcca6`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/18dcca6)
+- Update package.json [`a1cf786`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/a1cf786)
+- workflow improved [`79ea74b`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/79ea74b)
+- build workflow improved [`380fdfd`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/380fdfd)
+- Update package.json [`5bcb3dd`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/5bcb3dd)
+- Update package.json [`d693fd3`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/d693fd3)
+- release workflow created and theme color fix [`750f0d6`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/750f0d6)
 - Update build.yml [`d855c5d`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/d855c5d)
 - Update build.yml [`23395e3`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/23395e3)
 - Revert "Update package.json" [`abd6bab`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/abd6bab)
