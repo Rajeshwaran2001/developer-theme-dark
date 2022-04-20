@@ -44,8 +44,14 @@
             {
                 "label": "Developers Theme",
                 "uiTheme": "vs-dark",
-                "path": "./themes/Developers Theme dark-color-theme.json"
+                "path": "./themes/Developers Theme dark.json"
+            },
+            {
+                "label": "Developers Theme - Firefox Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Firefox Dark.json"
             }
+            
         ],
         "productIconThemes": [
             {
