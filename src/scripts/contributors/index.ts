@@ -108,12 +108,12 @@ const init = async () => {
 
   if (contributorsList.length > 0) {
     console.log(
-      '> Material Icon Theme:',
+      '> Developer Theme:',
       painter.green('Successfully fetched all contributors from GitHub!')
     );
   } else {
     console.log(
-      '> Developer Icon Theme:',
+      '> Developer Theme:',
       painter.red('Error: Could not fetch contributors from GitHub!')
     );
     throw Error();
@@ -121,12 +121,12 @@ const init = async () => {
   const outputPath = createContributorsList(contributorsList);
 
   // create the image
-  console.log('> Material Icon Theme:', painter.yellow('Creating image...'));
+  console.log('> Developer Theme:', painter.yellow('Creating image...'));
   const fileName = 'contributors';
   createScreenshot(outputPath, fileName)
     .then(() => {
       console.log(
-        '> Material Icon Theme:',
+        '> Developer Theme:',
         painter.green(`Successfully created ${fileName} image!`)
       );
     })
