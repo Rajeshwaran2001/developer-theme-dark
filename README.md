@@ -15,11 +15,18 @@
     <a href="https://github.com/Rajeshwaran2001/developer-theme-dark/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/Rajeshwaran2001/developer-theme-dark?style=for-the-badge&colorA=252526&colorB=43A047&label=LICENSE" alt="LICENSE"></a>
 </p>
 
-# Preview of theme and colors
+# Preview of themes and colors
 
 > Not too bright and not too subtle. 
 
+## Developers Theme
 <img src="https://raw.githubusercontent.com/Rajeshwaran2001/developer-theme-dark/main/assest/theme.png" alt="Developer Theme Prev" />
+
+## Firefox Dark
+<img src="https://raw.githubusercontent.com/Rajeshwaran2001/developer-theme-dark/main/assest/FirefoxDark.png" alt="Firefox Dark" />
+
+## Ocean Dark
+<img src="https://raw.githubusercontent.com/Rajeshwaran2001/developer-theme-dark/main/assest/OceanDark.png" alt="Ocean Dark" />
 
 ### Product icons
 
