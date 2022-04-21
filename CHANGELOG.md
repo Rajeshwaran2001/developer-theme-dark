@@ -3,6 +3,15 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v3.0.0](https://github.com/Rajeshwaran2001/developer-theme-dark/compare/v2.0.0...v3.0.0) 
+
+> April 21, 2022 
+
+- NewThemesPreviewUpdate [`3daa876`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/3daa876)
+- NewThemePreviewImages [`649e838`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/649e838)
+- OceanDark_NewTheme [`07e8162`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/07e8162)
+- Firefox Dark new theme [`db09ea3`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/db09ea3)
+ 
 #### [v2.0.0](https://github.com/Rajeshwaran2001/developer-theme-dark/compare/1.6.2...v2.0.0) 
 
 > April 20, 2022 

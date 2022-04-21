@@ -2,7 +2,7 @@
     "name": "developer-theme-dark",
     "displayName": "Developer's theme",
     "description": "A theme suitable to teach code online in dark mode",
-    "version": "2.0.0",
+    "version": "3.0.0",
     "publisher": "Rajeshwaran",
     "author": {
         "name": "Rajeshwaran"
@@ -56,7 +56,6 @@
                 "uiTheme": "vs-dark",
                 "path": "./themes/OceanDark.json"
             }
-            
         ],
         "productIconThemes": [
             {
