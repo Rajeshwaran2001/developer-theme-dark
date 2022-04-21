@@ -50,6 +50,11 @@
                 "label": "Developers Theme - Firefox Dark",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Firefox Dark.json"
+            },
+            {
+                "label": "Developers Theme - Ocean",
+                "uiTheme": "vs-dark",
+                "path": "./themes/OceanDark.json"
             }
             
         ],
