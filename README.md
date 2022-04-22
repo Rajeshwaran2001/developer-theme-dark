@@ -15,7 +15,7 @@
     <a href="https://github.com/Rajeshwaran2001/developer-theme-dark/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/Rajeshwaran2001/developer-theme-dark?style=for-the-badge&colorA=252526&colorB=43A047&label=LICENSE" alt="LICENSE"></a>&nbsp;
     <a href="https://vscode.dev/theme/Rajeshwaran.developer-theme-dark"><img src="https://img.shields.io/badge/preview%20in-vscode.dev-blue?style=for-the-badge&colorA=252526&colorB=43A047&label=VERSION" alt="Version"></a>&nbsp;
 </p>
-[![Preview in vscode.dev]()](https://vscode.dev/theme/zhuangtongfa.Material-theme) 
+
 # Preview of themes and colors
 
 > Not too bright and not too subtle. 
