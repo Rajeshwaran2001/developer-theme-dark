@@ -3,6 +3,15 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v3.0.1](https://github.com/Rajeshwaran2001/developer-theme-dark/compare/v3.0.0...v3.0.1) 
+
+> April 22, 2022 
+
+- Update README.md [`aec533f`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/aec533f)
+- readme update [`841ba1c`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/841ba1c)
+- new theme preview update [`db5fb48`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/db5fb48)
+- Bump minimist from 1.2.5 to 1.2.6 [`5a4e7a1`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/5a4e7a1)
+ 
 #### [v3.0.0](https://github.com/Rajeshwaran2001/developer-theme-dark/compare/v2.0.0...v3.0.0) 
 
 > April 21, 2022 
