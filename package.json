@@ -55,6 +55,11 @@
                 "label": "Developers Theme - Ocean",
                 "uiTheme": "vs-dark",
                 "path": "./themes/OceanDark.json"
+            },
+            {
+                "label": "Developers Theme - Green Coffee",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Green-coffee.json"
             }
         ],
         "productIconThemes": [
