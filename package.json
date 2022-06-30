@@ -60,6 +60,16 @@
                 "label": "Developers Theme - Green Coffee",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Green-coffee.json"
+            },
+            {
+                "label": "Developers Theme - Aubergine",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Aubergine Dark.json"
+            },
+            {
+                "label": "Developers Theme - Slack Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Slack Dark.json"
             }
         ],
         "productIconThemes": [
