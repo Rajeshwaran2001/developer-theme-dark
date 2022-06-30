@@ -3,6 +3,14 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v4.0.0](https://github.com/Rajeshwaran2001/developer-theme-dark/compare/v3.0.1...v4.0.0) 
+
+> June 30, 2022 
+
+- new theme slack dark and aubergine dark [`e66b338`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/e66b338)
+- Update README.md [`bcb67b5`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/bcb67b5)
+- Added New Theme (Green Coffee) [`3740425`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/3740425)
+ 
 #### [v3.0.1](https://github.com/Rajeshwaran2001/developer-theme-dark/compare/v3.0.0...v3.0.1) 
 
 > April 22, 2022 
