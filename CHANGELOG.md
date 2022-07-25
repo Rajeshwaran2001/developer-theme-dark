@@ -3,6 +3,13 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v4.1.0](https://github.com/Rajeshwaran2001/developer-theme-dark/compare/v4.0.0...v4.1.0) 
+
+> July 25, 2022 
+
+- readme and minor color fix [`7a06fea`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/7a06fea)
+- Bump terser from 5.12.1 to 5.14.2 [`54bc8f3`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/54bc8f3)
+ 
 #### [v4.0.0](https://github.com/Rajeshwaran2001/developer-theme-dark/compare/v3.0.1...v4.0.0) 
 
 > June 30, 2022 
