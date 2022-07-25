@@ -1,10 +1,13 @@
 # Developer's theme
+
 ## Dark edition
- VS code Theme For Developers
+
+VS code Theme For Developers
 
 > A dark theme for [Visual Studio Code](http://code.visualstudio.com).
 
 &nbsp;
+
 <p align="center">
     <a href="https://marketplace.visualstudio.com/items?itemName=Rajeshwaran.developer-theme-dark"><img src="https://vsmarketplacebadge.apphb.com/version-short/Rajeshwaran.developer-theme-dark.svg?style=for-the-badge&colorA=252526&colorB=43A047&label=VERSION" alt="Version"></a>&nbsp;
     <a href="https://marketplace.visualstudio.com/items?itemName=Rajeshwaran.developer-theme-dark"><img src="https://vsmarketplacebadge.apphb.com/rating-short/Rajeshwaran.developer-theme-dark.svg?style=for-the-badge&colorA=252526&colorB=43A047&label=Rating" alt="Rating"></a>&nbsp;
@@ -18,22 +21,35 @@
 
 # Preview of themes and colors
 
-> Not too bright and not too subtle. 
+> Not too bright and not too subtle.
 
 ## Developers Theme
-<img src="https://raw.githubusercontent.com/Rajeshwaran2001/developer-theme-dark/main/assest/theme.png" alt="Developer Theme Prev" />
+
+<img src="https://raw.githubusercontent.com/Rajeshwaran2001/developer-theme-dark/main/assest/theme.webp" alt="Developer Theme Prev" />
 
 ## Firefox Dark
-<img src="https://raw.githubusercontent.com/Rajeshwaran2001/developer-theme-dark/main/assest/FirefoxDark.png" alt="Firefox Dark" />
+
+<img src="https://raw.githubusercontent.com/Rajeshwaran2001/developer-theme-dark/main/assest/FirefoxDark.webp" alt="Firefox Dark" />
 
 ## Ocean Dark
-<img src="https://raw.githubusercontent.com/Rajeshwaran2001/developer-theme-dark/main/assest/OceanDark.png" alt="Ocean Dark" />
+
+<img src="https://raw.githubusercontent.com/Rajeshwaran2001/developer-theme-dark/main/assest/OceanDark.webp" alt="Ocean Dark" />
+
+## Slack Dark
+
+<img src="https://raw.githubusercontent.com/Rajeshwaran2001/developer-theme-dark/main/assest/SlackDark.webp" alt="Slack Dark" />
+
+## Green Coffee
+
+<img src="https://raw.githubusercontent.com/Rajeshwaran2001/developer-theme-dark/main/assest/GreenCoffee.webp" alt="Green Coffee" />
+
+## Aubergine Dark
+
+<img src="https://raw.githubusercontent.com/Rajeshwaran2001/developer-theme-dark/main/assest/Aubergine.webp" alt="Aubergine Dark" />
 
 ### Product icons
 
 <img src="https://raw.githubusercontent.com/Rajeshwaran2001/developer-theme-dark/main/assest/preview.png" alt="Product Icons">
-
-
 
 ### File icons
 
@@ -44,7 +60,6 @@
 <img src="https://raw.githubusercontent.com/Rajeshwaran2001/developer-theme-dark/main/assest/folderIcons.png" alt="folder icons">
 
 ## Icon sources
-
 
 - [Fluent Design Icons](https://fluenticons.co/)
 - [Material Design Icons](https://materialdesignicons.com/)
