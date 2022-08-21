@@ -1,7 +1,7 @@
 {
     "name": "developer-theme-dark",
     "displayName": "Developer's theme",
-    "description": "A theme suitable to teach code online in dark mode",
+    "description": "A theme suitable to coders who loves dark theme",
     "version": "4.1.0",
     "publisher": "Rajeshwaran",
     "author": {
@@ -42,6 +42,11 @@
     "contributes": {
         "themes": [
             {
+                "label": "Developers Theme - Aubergine",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Aubergine Dark.json"
+            },
+            {
                 "label": "Developers Theme",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Developers Theme dark.json"
@@ -52,24 +57,24 @@
                 "path": "./themes/Firefox Dark.json"
             },
             {
-                "label": "Developers Theme - Ocean",
-                "uiTheme": "vs-dark",
-                "path": "./themes/OceanDark.json"
-            },
-            {
                 "label": "Developers Theme - Green Coffee",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Green-coffee.json"
             },
             {
-                "label": "Developers Theme - Aubergine",
+                "label": "Developers Theme - Ocean",
                 "uiTheme": "vs-dark",
-                "path": "./themes/Aubergine Dark.json"
+                "path": "./themes/OceanDark.json"
             },
             {
                 "label": "Developers Theme - Slack Dark",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Slack Dark.json"
+            },
+            {
+                "label": "Developers Theme - Silver Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Silver Dark.json"
             }
         ],
         "productIconThemes": [
