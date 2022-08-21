@@ -3,6 +3,12 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v5.0.0](https://github.com/Rajeshwaran2001/developer-theme-dark/compare/v4.1.0...v5.0.0) 
+
+> August 21, 2022 
+
+- new theme silver added [`ee32533`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/ee32533)
+ 
 #### [v4.1.0](https://github.com/Rajeshwaran2001/developer-theme-dark/compare/v4.0.0...v4.1.0) 
 
 > July 25, 2022 
