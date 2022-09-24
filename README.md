@@ -5,7 +5,8 @@
 VS code Theme For Developers
 
 > A dark theme for [Visual Studio Code](http://code.visualstudio.com).
-> For GitHub Actions Refer[publish-vscode-extension](https://github.com/HaaLeo/publish-vscode-extension)
+> 
+> For GitHub Actions Refer [publish-vscode-extension](https://github.com/HaaLeo/publish-vscode-extension)
 
 &nbsp;
 
