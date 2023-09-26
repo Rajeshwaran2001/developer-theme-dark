@@ -634,7 +634,13 @@ export const fileIcons: FileIcons = {
     { name: 'haxe', fileExtensions: ['hx'] },
     {
       name: 'test-ts',
-      fileExtensions: ['spec.ts', 'e2e-spec.ts', 'test.ts', 'tests.ts', 'ts.snap'],
+      fileExtensions: [
+        'spec.ts',
+        'e2e-spec.ts',
+        'test.ts',
+        'tests.ts',
+        'ts.snap',
+      ],
     },
     {
       name: 'test-jsx',
