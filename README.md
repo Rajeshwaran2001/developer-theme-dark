@@ -19,6 +19,12 @@ VS code Theme For Developers
     <a href="https://github.com/Rajeshwaran2001/developer-theme-dark/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/Rajeshwaran2001/developer-theme-dark?style=for-the-badge&colorA=252526&colorB=43A047&label=GitHub issues" alt="GitHub issues"></a>&nbsp;
     <a href="https://github.com/Rajeshwaran2001/developer-theme-dark/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/Rajeshwaran2001/developer-theme-dark?style=for-the-badge&colorA=252526&colorB=43A047&label=LICENSE" alt="LICENSE"></a>&nbsp;
     <a href="https://vscode.dev/theme/Rajeshwaran.developer-theme-dark"><img src="https://img.shields.io/badge/preview%20in-vscode.dev-blue?style=for-the-badge&colorA=252526&colorB=43A047&label=PREVIEW" alt="Preview"></a>&nbsp;
+    <a href="https://discord.gg/N9WdqHdmC">
+    <img
+        alt="Discord"
+        src="https://img.shields.io/badge/Discord-Join%20Community?style=for-the-badge&colorA=252526&colorB=5865F2&logo=discord&logoColor=white"
+    >
+</a>&nbsp;
 </p>
 
 # Preview of themes and colors
