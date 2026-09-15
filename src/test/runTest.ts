@@ -1,5 +1,5 @@
 import * as path from 'path';
-import { runTests } from 'vscode-test';
+import { runTests } from '@vscode/test-electron';
 
 const main = async () => {
   try {
@@ -18,7 +18,7 @@ const main = async () => {
       launchArgs: ['--disable-gpu', '--disable-workspace-trust'],
     });
   } catch (err) {
-    console.error('Failed to run tests');
+    console.error('Failed to run tests', err);
     process.exit(1);
   }
 };

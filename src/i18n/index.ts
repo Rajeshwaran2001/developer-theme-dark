@@ -24,7 +24,7 @@ export const initTranslations = async () => {
 const loadTranslation = async (language: string) => {
   try {
     return await getTranslationObject(language);
-  } catch (error) {
+  } catch {
     return await getTranslationObject('en');
   }
 };

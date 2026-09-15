@@ -18,13 +18,11 @@ export const setIconSaturation = (
     );
   }
 
-  let iconsPath = '';
-  if (path.basename(__dirname) === 'dist') {
-    iconsPath = path.join(__dirname, '..', 'icons');
-  } else {
-    // executed via script
-    iconsPath = path.join(__dirname, '..', '..', '..', 'icons');
-  }
+  const iconsPath =
+    path.basename(__dirname) === 'dist'
+      ? path.join(__dirname, '..', 'icons')
+      : // executed via script
+        path.join(__dirname, '..', '..', '..', 'icons');
 
   const customIconPaths = getCustomIconPaths(options);
   const iconFiles = fs.readdirSync(iconsPath);
@@ -106,7 +104,7 @@ export const validateSaturationValue = (saturation: number | undefined) => {
 };
 
 const adjustSaturation = (
-  iconsPath: any,
+  iconsPath: string,
   options: IconJsonOptions
 ): ((value: string, index: number, array: string[]) => void) => {
   return (iconFileName) => {

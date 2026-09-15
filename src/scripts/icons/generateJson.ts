@@ -7,5 +7,5 @@ try {
   createIconFile();
 } catch (error) {
   console.error(error);
-  throw Error('Could not create icon file!');
+  throw new Error('Could not create icon file!', { cause: error });
 }

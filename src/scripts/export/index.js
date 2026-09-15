@@ -1,49 +1,76 @@
-// https://github.com/bitinn/character-map
+/**
+ * Dumps the glyph table of the generated icon font as CSV.
+ * Originally based on https://github.com/bitinn/character-map
+ *
+ * Usage: node src/scripts/export/index.js -f <font.ttf> [-o <out.csv>]
+ *
+ * Writing goes to `-o` rather than a shell redirect on purpose: a redirect
+ * captures stdout even when the run fails, which is how an error message
+ * ended up committed as the contents of `developer-icons.csv`.
+ */
+const fs = require('node:fs');
+const path = require('node:path');
+const minimist = require('minimist');
+const opentype = require('opentype.js');
 
-var opts = require("minimist")(process.argv.slice(2));
-var opentype = require("opentype.js");
+/** Format a codepoint as an upper-case, zero-padded hex string. */
+const formatUnicode = (unicode) => {
+  const hex = unicode.toString(16).toUpperCase();
+  return hex.length > 4 ? hex.padStart(6, '0') : hex.padStart(4, '0');
+};
 
-if (!opts.f || typeof opts.f !== "string") {
-  console.log(
-    "use -f to specify your font path, TrueType and OpenType supported"
+const main = () => {
+  const opts = minimist(process.argv.slice(2));
+
+  if (!opts.f || typeof opts.f !== 'string') {
+    throw new Error(
+      'use -f to specify your font path, TrueType and OpenType supported'
+    );
+  }
+
+  const buffer = fs.readFileSync(path.resolve(opts.f));
+  // opentype.js v2 dropped `loadSync`; `parse` takes an ArrayBuffer.
+  const font = opentype.parse(
+    buffer.buffer.slice(
+      buffer.byteOffset,
+      buffer.byteOffset + buffer.byteLength
+    )
   );
-  return;
-}
 
-opentype.load(opts.f, function(err, font) {
-  if (err) {
-    console.log(err);
-    return;
+  if (!font.numGlyphs) {
+    throw new Error(`no glyphs found in ${opts.f}`);
   }
 
-  var glyphs = font.glyphs.glyphs;
-  if (!glyphs || glyphs.length === 0) {
-    console.log("no glyphs found in this font");
-    return;
+  const rows = ['short_name,character,unicode'];
+
+  for (let i = 0; i < font.numGlyphs; i++) {
+    const glyph = font.glyphs.get(i);
+    const [codepoint] = glyph.unicodes ?? [];
+    if (codepoint === undefined) continue;
+
+    rows.push(
+      [
+        glyph.name,
+        String.fromCodePoint(codepoint),
+        formatUnicode(codepoint),
+      ].join(',')
+    );
   }
 
-  var table = "short_name,character,unicode";
-  for (glyphIndex in glyphs) {
-    var glyph = glyphs[glyphIndex];
-    var name = glyph.name;
-    var unicode = glyph.unicodes.map(formatUnicode).join(", ");
-    unicode = unicode.split(",")[0];
-    // var character = String.fromCharCode(glyph.unicode);
-    var character = String.fromCharCode(parseInt(glyph.unicodes.map(formatUnicode)[0], 16));
-    if (unicode) {
-      table += "\n" + name + "," + character + "," + unicode;
-    }
-    
-  }
+  const csv = rows.join('\n') + '\n';
 
-  console.log(table);
-});
-
-function formatUnicode(unicode) {
-  unicode = unicode.toString(16);
-  if (unicode.length > 4) {
-    return ("000000" + unicode.toUpperCase()).substr(-6);
+  if (opts.o && typeof opts.o === 'string') {
+    fs.mkdirSync(path.dirname(opts.o), { recursive: true });
+    fs.writeFileSync(opts.o, csv);
+    console.log(`> Wrote ${rows.length - 1} glyphs to ${opts.o}`);
   } else {
-    return ("0000" + unicode.toUpperCase()).substr(-4);
+    process.stdout.write(csv);
   }
+};
+
+try {
+  main();
+} catch (error) {
+  console.error(error.message);
+  process.exit(1);
 }
