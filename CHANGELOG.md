@@ -3,6 +3,33 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v6.0.0](https://github.com/Rajeshwaran2001/developer-theme-dark/compare/v5.0.0...v6.0.0) 
+
+> September 15, 2026 
+
+- Update svg-color-linter command to specify version and config [`2dd293c`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/2dd293c)
+- Remove developer-icons assets and related files [`4c7a866`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/4c7a866)
+- Refactor template and configuration files [`b8f0199`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/b8f0199)
+- Add Discord community link to README [`3f60a24`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/3f60a24)
+- Update Puppeteer launch options for screenshots [`521844e`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/521844e)
+- package lock updated [`b368b32`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/b368b32)
+- Update Node.js version and setup action in workflow [`0d97e9f`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/0d97e9f)
+- Upgrade actions/cache from v2 to v4 [`0d26181`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/0d26181)
+- add my alt theme [`5a558bd`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/5a558bd)
+- remove invalid entry [`953ca10`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/953ca10)
+- add my alt theme [`7bad220`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/7bad220)
+- true -> explicit [`5a4eef6`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/5a4eef6)
+- fix error [`f934da0`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/f934da0)
+- Bump ws and puppeteer [`029468b`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/029468b)
+- Bump braces from 3.0.2 to 3.0.3 [`a50a943`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/a50a943)
+- Update fileIcons.ts [`bdfbe1e`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/bdfbe1e)
+- Update fileIcons.ts [`827ef7d`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/827ef7d)
+- Bump word-wrap from 1.2.3 to 1.2.4 [`7ea0a70`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/7ea0a70)
+- Bump webpack from 5.70.0 to 5.76.1 [`83ee5f9`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/83ee5f9)
+- Pull request update 3d.svg [`e41f414`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/e41f414)
+- Update README.md [`aa93f99`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/aa93f99)
+- Update README.md [`c062e90`](https://github.com/Rajeshwaran2001/developer-theme-dark/commit/c062e90)
+ 
 #### [v5.0.0](https://github.com/Rajeshwaran2001/developer-theme-dark/compare/v4.1.0...v5.0.0) 
 
 > August 21, 2022 
