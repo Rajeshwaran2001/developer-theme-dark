@@ -18,19 +18,17 @@ export const changeFolderTheme = async () => {
 
 /** Show QuickPick items to select preferred configuration for the folder icons. */
 const showQuickPickItems = (activeTheme: string) => {
-  const options = folderIcons.map(
-    (theme): vscode.QuickPickItem => ({
-      description: helpers.capitalizeFirstLetter(theme.name),
-      detail:
-        theme.name === 'none'
-          ? i18n.translate('folders.disabled')
-          : i18n.translate(
-              'folders.theme.description',
-              helpers.capitalizeFirstLetter(theme.name)
-            ),
-      label: theme.name === activeTheme ? '\u2714' : '\u25FB',
-    })
-  );
+  const options = folderIcons.map((theme): vscode.QuickPickItem => ({
+    description: helpers.capitalizeFirstLetter(theme.name),
+    detail:
+      theme.name === 'none'
+        ? i18n.translate('folders.disabled')
+        : i18n.translate(
+            'folders.theme.description',
+            helpers.capitalizeFirstLetter(theme.name)
+          ),
+    label: theme.name === activeTheme ? '\u2714' : '\u25FB',
+  }));
 
   return vscode.window.showQuickPick(options, {
     placeHolder: i18n.translate('folders.toggleIcons'),

@@ -19,7 +19,7 @@ export const getConfigProperties = (): { [config: string]: unknown } => {
 /** Update configuration of vs code. */
 export const setConfig = (
   section: string,
-  value: any,
+  value: unknown,
   global: boolean = false
 ) => {
   return getConfig().update(section, value, global);
@@ -32,7 +32,7 @@ export const getThemeConfig = (section: string) => {
 /** Set the config of the theme. */
 export const setThemeConfig = (
   section: string,
-  value: any,
+  value: unknown,
   global: boolean = false
 ) => {
   return getConfig('developer-icon-theme').update(section, value, global);

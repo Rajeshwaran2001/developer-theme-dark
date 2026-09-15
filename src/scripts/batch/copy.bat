@@ -1,1 +1,0 @@
-copy dist\developer-icons.ttf product_icons/developer-icons.ttf

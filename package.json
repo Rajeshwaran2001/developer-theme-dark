@@ -1,150 +1,154 @@
 {
-    "name": "developer-theme-dark",
-    "displayName": "Developer's theme",
-    "description": "A theme suitable to coders who loves dark theme",
-    "version": "5.0.0",
-    "publisher": "Rajeshwaran",
-    "author": {
-        "name": "Rajeshwaran"
-    },
-    "icon": "assest/logo.jpg",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Rajeshwaran2001/developer-theme-dark.git"
-    },
-    "homepage": "https://github.com/Rajeshwaran2001/developer-theme-dark/blob/main/README.md",
-    "galleryBanner": {
-        "color": "#650681",
-        "theme": "dark"
-    },
-    "engines": {
-        "vscode": "^1.63.0"
-    },
-    "categories": [
-        "Themes"
+  "name": "developer-theme-dark",
+  "displayName": "Developer's theme",
+  "description": "A theme suitable to coders who loves dark theme",
+  "version": "5.0.0",
+  "publisher": "Rajeshwaran",
+  "author": {
+    "name": "Rajeshwaran"
+  },
+  "icon": "assest/logo.jpg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rajeshwaran2001/developer-theme-dark.git"
+  },
+  "homepage": "https://github.com/Rajeshwaran2001/developer-theme-dark/blob/main/README.md",
+  "galleryBanner": {
+    "color": "#650681",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.63.0",
+    "node": ">=22.0.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "Dark Theme",
+    "Code Tutorial",
+    "Developer's Dark Theme",
+    "theme",
+    "Coders Theme",
+    "Programmers Theme",
+    "Dark Theme lovers",
+    "color-theme",
+    "dark",
+    "icon",
+    "product",
+    "icon-theme",
+    "product-icon-theme",
+    "customization"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Developers Theme - Aubergine",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Aubergine Dark.json"
+      },
+      {
+        "label": "Developers Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Developers Theme dark.json"
+      },
+      {
+        "label": "Developers Theme - Firefox Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Firefox Dark.json"
+      },
+      {
+        "label": "Developers Theme - Green Coffee",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Green-coffee.json"
+      },
+      {
+        "label": "Developers Theme - Ocean",
+        "uiTheme": "vs-dark",
+        "path": "./themes/OceanDark.json"
+      },
+      {
+        "label": "Developers Theme - Slack Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Slack Dark.json"
+      },
+      {
+        "label": "Developers Theme - Silver Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Silver Dark.json"
+      },
+      {
+        "label": "Developers Theme - dark alt",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Developers Theme dark alt.json"
+      }
     ],
-    "keywords": [
-        "Dark Theme",
-        "Code Tutorial",
-        "Developer's Dark Theme",
-        "theme",
-        "Coders Theme",
-        "Programmers Theme",
-        "Dark Theme lovers",
-        "color-theme",
-        "dark",
-        "icon",
-        "product",
-        "icon-theme",
-        "product-icon-theme",
-        "customization"
+    "productIconThemes": [
+      {
+        "id": "developer-icons",
+        "label": "Developer's Icons",
+        "path": "./product_icons/developer's-icons.json"
+      }
     ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "Developers Theme - Aubergine",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Aubergine Dark.json"
-            },
-            {
-                "label": "Developers Theme",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Developers Theme dark.json"
-            },
-            {
-                "label": "Developers Theme - Firefox Dark",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Firefox Dark.json"
-            },
-            {
-                "label": "Developers Theme - Green Coffee",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Green-coffee.json"
-            },
-            {
-                "label": "Developers Theme - Ocean",
-                "uiTheme": "vs-dark",
-                "path": "./themes/OceanDark.json"
-            },
-            {
-                "label": "Developers Theme - Slack Dark",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Slack Dark.json"
-            },
-            {
-                "label": "Developers Theme - Silver Dark",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Silver Dark.json"
-            },
-            {
-                "label": "Developers Theme - dark alt",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Developers Theme dark alt.json"
-            }
-        ],
-        "productIconThemes": [
-            {
-                "id": "developer-icons",
-                "label": "Developer's Icons",
-                "path": "./product_icons/developer's-icons.json"
-            }
-        ],
-        "iconThemes": [
-            {
-                "id": "developer-icon-theme",
-                "label": "Developer's File Icons",
-                "path": "./file_icons/developer-icons.json"
-            }
-        ]
-    },
-    "scripts": {
-        "clear": "src/scripts/batch/clean.bat",
-        "clean": "rm -rf dist && mkdir dist",
-        "svgo-p": "svgo -f Pro-icons/ --config config.yml",
-        "svgo-mf": "svgo -i icons -o icons -q",
-        "export-to-csv": "node src/scripts/export/index.js -f dist/developer-icons.ttf > dist/developer-icons.csv",
-        "fonts": "icon-font-generator Pro-icons/*.svg -o dist -n developer-icons -p developer-icons --csstp src/scripts/template/styles.hbs --htmltp src/scripts/template/preview.hbs --height=1000 --center --codepoints src/scripts/template/mapping.json --json false --types 'ttf'",
-        "copy": "src/scripts/batch/copy.bat",
-        "move": "sh util.sh",
-        "contributors": "ts-node ./src/scripts/contributors/index.ts",
-        "generateJson": "ts-node ./src/scripts/icons/generateJson.ts",
-        "lint": "eslint -c .eslintrc.json --ext .ts ./src/**/*.ts",
-        "preview": "ts-node ./src/scripts/preview",
-        "changelog": "changelog-machine --config changelog.config.json",
-        "preversion": "npm run contributors && git add assest/contributors.png && npm run preview && git add assest/fileIcons.png && git add assest/folderIcons.png",
-        "version": "npm run changelog && git add CHANGELOG.md",
-        "dev": "npm run clean && npm run move && npm run lint && npm run svgo-p && npm run svgo-mf && npm run fonts && npm run export-to-csv && npm run generateJson && cp -R dist/developer-icons.ttf product_icons/developer-icons.ttf",
-        "build": "npm run lint && npm run svgo-p && npm run svgo-mf && npm run fonts && npm run export-to-csv && npm run generateJson && cp -R dist/developer-icons.ttf product_icons/developer-icons.ttf"
-    },
-    "devDependencies": {
-        "handlebars": ">=4.7.7",
-        "icon-font-generator": "^2.1.11",
-        "lodash": ">=4.17.21",
-        "minimist": "^1.2.6",
-        "opentype.js": "^0.6.6",
-        "svgo": "1.3.2",
-        "underscore": ">=1.12.1",
-        "xmldom": ">=0.6.0",
-        "ts-loader": "^9.2.6",
-        "ts-node": "^10.4.0",
-        "typescript": "^4.5.2",
-        "vscode-test": "^1.6.1",
-        "@types/glob": "^7.2.0",
-        "@types/lodash.merge": "^4.6.6",
-        "@types/mocha": "^9.0.0",
-        "@types/node": "^16.11.10",
-        "@types/puppeteer": "^5.4.4",
-        "@types/vscode": "~1.51.0",
-        "@typescript-eslint/eslint-plugin": "^5.4.0",
-        "@typescript-eslint/parser": "^5.4.0",
-        "changelog-machine": "^1.0.0",
-        "eslint": "^8.3.0",
-        "eslint-config-prettier": "^8.3.0",
-        "eslint-plugin-prettier": "^4.0.0",
-        "glob": "^7.2.0",
-        "mocha": "^9.1.3",
-        "prettier": "^2.5.0",
-        "puppeteer": "^22.11.2",
-        "rimraf": "^3.0.2"
-    }
+    "iconThemes": [
+      {
+        "id": "developer-icon-theme",
+        "label": "Developer's File Icons",
+        "path": "./file_icons/developer-icons.json"
+      }
+    ]
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "move": "sh util.sh",
+    "svgo-p": "svgo -f Pro-icons --config svgo.pro-icons.config.mjs",
+    "svgo-mf": "svgo -f icons -o icons -q",
+    "prefonts": "node -e \"require('node:fs').mkdirSync('dist', { recursive: true })\"",
+    "fonts": "fantasticon",
+    "export-to-csv": "node src/scripts/export/index.js -f dist/developer-icons.ttf -o dist/developer-icons.csv",
+    "copy-font": "node -e \"require('node:fs').copyFileSync('dist/developer-icons.ttf', 'product_icons/developer-icons.ttf')\"",
+    "contributors": "tsx ./src/scripts/contributors/index.ts",
+    "generateJson": "tsx ./src/scripts/icons/generateJson.ts",
+    "preview": "tsx ./src/scripts/preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit",
+    "compile": "tsc -p .",
+    "test": "npm run compile && node ./out/test/runTest.js",
+    "changelog": "changelog-machine --config changelog.config.json",
+    "package": "vsce package",
+    "dev": "npm run clean && npm run lint && npm run svgo-p && npm run svgo-mf && npm run fonts && npm run export-to-csv && npm run generateJson && npm run copy-font",
+    "build": "npm run lint && npm run typecheck && npm run svgo-p && npm run svgo-mf && npm run fonts && npm run export-to-csv && npm run generateJson && npm run copy-font",
+    "preversion": "npm run contributors && git add assest/contributors.png && npm run preview && git add assest/fileIcons.png && git add assest/folderIcons.png",
+    "version": "npm run changelog && git add CHANGELOG.md"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/lodash.merge": "^4.6.9",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.20.2",
+    "@types/vscode": "~1.63.0",
+    "@vscode/test-electron": "^3.1.0",
+    "@vscode/vsce": "^4.0.0",
+    "changelog-machine": "^1.1.0",
+    "eslint": "^10.10.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
+    "fantasticon": "^4.1.0",
+    "glob": "^13.0.6",
+    "globals": "^17.12.0",
+    "lodash.merge": "^4.6.2",
+    "minimist": "^1.2.8",
+    "mocha": "^12.0.1",
+    "opentype.js": "^2.0.0",
+    "prettier": "^3.9.6",
+    "puppeteer": "^25.11.0",
+    "rimraf": "^6.1.3",
+    "svgo": "^4.1.0",
+    "tsx": "^4.23.13",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.70.0"
+  }
 }

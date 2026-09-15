@@ -5,6 +5,9 @@ on:
     paths:
       - 'icons/*.svg'
 
+permissions:
+  contents: read
+
 jobs:
   color-check:
     name: SVG Color Check
@@ -13,10 +16,21 @@ jobs:
       TARGET_BRANCH: ${{ github.event.pull_request.base.ref }}
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v2
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
+
+      # svg-color-linter declares `engines.bun`, so it runs under bun, not npm.
+      - name: Setup Bun ⚙️
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
       - name: Check colors 🎨
         run: |
-          svgFiles=$(git diff origin/${{ env.TARGET_BRANCH }} --name-only | grep '.svg$')
-          npx svg-color-linter --colors material-colors.yml ${svgFiles}
+          svgFiles=$(git diff origin/${{ env.TARGET_BRANCH }} --name-only -- 'icons/*.svg')
+          if [ -z "$svgFiles" ]; then
+            echo "No changed SVG icons to check."
+            exit 0
+          fi
+          bunx svg-color-linter --colors material-colors.yml $svgFiles

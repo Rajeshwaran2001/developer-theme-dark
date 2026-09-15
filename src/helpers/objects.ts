@@ -3,7 +3,7 @@
  * This solution is lighter than the lodash get-version.
  * Source: http://stackoverflow.com/a/6491621/6942210
  */
-export const getObjectPropertyValue = (obj: Object, path: string) => {
+export const getObjectPropertyValue = (obj: object, path: string) => {
   const pathArray = path
     .replace(/\[(\w+)\]/g, '.$1') // convert indexes to properties
     .replace(/^\./, '') // strip a leading dot
@@ -34,25 +34,21 @@ export const getObjectPropertyValue = (obj: Object, path: string) => {
  * Source: https://stackoverflow.com/a/13719799/6942210
  */
 export const setObjectPropertyValue = (
-  obj: { [key: string]: any },
+  obj: Record<string, unknown>,
   path: string | string[],
-  value: any
+  value: unknown
 ) => {
-  if (typeof path === 'string') {
-    path = path.split('.');
-  }
+  const segments = typeof path === 'string' ? path.split('.') : path;
 
-  if (path.length > 1) {
-    const e = path.shift() ?? '';
-    setObjectPropertyValue(
-      (obj[e] =
-        Object.prototype.toString.call(obj[e]) === '[object Object]'
-          ? obj[e]
-          : {}),
-      path,
-      value
-    );
+  if (segments.length > 1) {
+    const [head, ...rest] = segments;
+    const next =
+      Object.prototype.toString.call(obj[head]) === '[object Object]'
+        ? (obj[head] as Record<string, unknown>)
+        : {};
+    obj[head] = next;
+    setObjectPropertyValue(next, rest, value);
   } else {
-    obj[path[0]] = value;
+    obj[segments[0]] = value;
   }
 };

@@ -34,12 +34,10 @@ export const changeFolderColor = async () => {
 
 /** Show QuickPick items to select preferred color for the folder icons. */
 const showQuickPickItems = (currentColor: string) => {
-  const options = iconPalette.map(
-    (color): vscode.QuickPickItem => ({
-      description: color.label,
-      label: isColorActive(color, currentColor) ? '\u2714' : '\u25FB',
-    })
-  );
+  const options = iconPalette.map((color): vscode.QuickPickItem => ({
+    description: color.label,
+    label: isColorActive(color, currentColor) ? '\u2714' : '\u25FB',
+  }));
 
   return vscode.window.showQuickPick(options, {
     placeHolder: i18n.translate('folders.color'),

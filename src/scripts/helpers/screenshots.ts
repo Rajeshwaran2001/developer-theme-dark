@@ -7,14 +7,14 @@ import puppeteer from 'puppeteer';
  * @param fileName Name of the output image
  */
 export const createScreenshot = async (filePath: string, fileName: string) => {
+  const htmlFilePath = path.join('file:', filePath);
+
+  const browser = await puppeteer.launch({
+    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    headless: true,
+  });
+
   try {
-    const htmlFilePath = path.join('file:', filePath);
-
-    const browser = await puppeteer.launch({
-      args: ['--no-sandbox', '--disable-setuid-sandbox'],
-      headless: 'new'
-    });
-
     const page = await browser.newPage();
 
     await page.setViewport({
@@ -22,17 +22,20 @@ export const createScreenshot = async (filePath: string, fileName: string) => {
       width: 1000,
     });
 
-    await page.goto(htmlFilePath);
+    await page.goto(htmlFilePath, { waitUntil: 'networkidle0' });
 
     await page.screenshot({
       path: `assest/${fileName}.png`,
       omitBackground: true,
       fullPage: true,
     });
-
-    await browser.close();
   } catch (error) {
     console.error(error);
-    throw Error('Could not create screenshot for a preview');
+    throw new Error(`Could not create screenshot for the ${fileName} preview`, {
+      cause: error,
+    });
+  } finally {
+    // Always release the browser, otherwise a failed run leaves Chrome behind.
+    await browser.close();
   }
 };

@@ -47,9 +47,13 @@ const compareConfigs = (): {
         );
 
         if (JSON.stringify(configValue) !== JSON.stringify(currentState)) {
-          setObjectPropertyValue(json.options as {}, configName, configValue);
           setObjectPropertyValue(
-            result.updatedConfigs,
+            json.options as unknown as Record<string, unknown>,
+            configName,
+            configValue
+          );
+          setObjectPropertyValue(
+            result.updatedConfigs as unknown as Record<string, unknown>,
             configName,
             configValue
           );

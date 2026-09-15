@@ -6,11 +6,14 @@ on:
       versionChange:
         type: choice
         description: Select the version change
-        requried: true
+        required: true
         options:
           - major
           - minor
           - patch
+
+permissions:
+  contents: write
 
 jobs:
   release:
@@ -19,45 +22,48 @@ jobs:
       VERSION_CHANGE: ${{ github.event.inputs.versionChange }}
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v2
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
+
       - name: Setup Node.js ⚙️
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v6
         with:
-          node-version: 'lts/*'
-          registry-url: 'https://registry.npmjs.org'
+          node-version: 22.x
+          cache: npm
+
       - name: Install node_modules 📦
-        run: |
-          npm ci
-          npm install --global vsce
+        run: npm ci
+
       - name: Update version ↗
         run: |
           git config --global user.name 'Rajeshwaran2001'
           git config --global user.email 'Rajeshwaran2001@users.noreply.github.com'
           git config --global push.followTags true
           npm version ${{ env.VERSION_CHANGE }} -m "Release %s"
+
       - name: Get meta data 🔍
         run: |
-          NODE_VERSION=$(node -p -e "require('./package.json').version")
-          echo VERSION=$NODE_VERSION >> $GITHUB_ENV
-          NODE_NAME=$(node -p -e "require('./package.json').name")
-          echo NAME=$NODE_NAME >> $GITHUB_ENV
-          NODE_DISPLAY_NAME=$(node -p -e "require('./package.json').displayName")
-          echo DISPLAY_NAME=$NODE_DISPLAY_NAME >> $GITHUB_ENV
+          echo "VERSION=$(node -p "require('./package.json').version")" >> $GITHUB_ENV
+          echo "NAME=$(node -p "require('./package.json').name")" >> $GITHUB_ENV
+          echo "DISPLAY_NAME=$(node -p "require('./package.json').displayName")" >> $GITHUB_ENV
+
       - name: Build ⚒️
-        run: vsce package
+        run: npx --no-install vsce package
+
       - name: Push tags 📌
         run: git push
+
       - name: Release ${{ env.VERSION }} 🔆
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v3
         with:
           files: ${{ env.NAME }}-${{ env.VERSION }}.vsix
           tag_name: v${{ env.VERSION }}
           name: ${{ env.DISPLAY_NAME }} v${{ env.VERSION }}
           generate_release_notes: true
+
       - name: Publish to Visual Studio Marketplace 🌐
-        uses: HaaLeo/publish-vscode-extension@v1
+        uses: HaaLeo/publish-vscode-extension@v2
         with:
           pat: ${{ secrets.VS_MARKETPLACE_TOKEN }}
           registryUrl: https://marketplace.visualstudio.com

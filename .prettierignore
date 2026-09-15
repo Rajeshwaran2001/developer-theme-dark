@@ -1,0 +1,15 @@
+dist/
+out/
+node_modules/
+icons/
+Pro-icons/
+file_icons/
+product_icons/
+themes/
+package-lock.json
+CHANGELOG.md
+src/scripts/preview/*.html
+
+# Handlebars templates for fantasticon: Prettier parses .hbs with the Glimmer
+# parser, which rejects valid Handlebars syntax such as `../` context changes.
+*.hbs

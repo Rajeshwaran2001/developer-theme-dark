@@ -113,7 +113,7 @@ export const createIconFile = (
     }
     renameIconFiles(iconJsonPath, options);
   } catch (error) {
-    throw new Error('Failed to update icons: ' + error);
+    throw new Error('Failed to update icons', { cause: error });
   }
 
   try {
@@ -128,7 +128,7 @@ export const createIconFile = (
       'utf-8'
     );
   } catch (error) {
-    throw new Error('Failed to create icon file: ' + error);
+    throw new Error('Failed to create icon file', { cause: error });
   }
 
   return iconJsonName;
@@ -173,7 +173,7 @@ const renameIconFiles = (iconJsonPath: string, options: IconJsonOptions) => {
         // append file config to file name
         const newFilePath = path.join(
           iconPath,
-          f.replace(/(^[^\.~]+)(.*)\.svg/, `$1${fileConfigHash}.svg`)
+          f.replace(/(^[^.~]+)(.*)\.svg/, `$1${fileConfigHash}.svg`)
         );
 
         // if generated files are already in place, do not overwrite them

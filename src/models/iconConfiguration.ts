@@ -11,7 +11,7 @@ export class IconConfiguration {
   fileExtensions?: Record<string, string>;
   fileNames?: Record<string, string>;
   languageIds?: Record<string, string>;
-  iconDefinitions?: Record<string, any>;
+  iconDefinitions?: Record<string, { iconPath: string }>;
   light?: IconConfiguration;
   highContrast?: IconConfiguration;
   options?: IconJsonOptions;
