@@ -28,9 +28,25 @@ jobs:
 
       - name: Check colors 🎨
         run: |
-          svgFiles=$(git diff origin/${{ env.TARGET_BRANCH }} --name-only -- 'icons/*.svg')
-          if [ -z "$svgFiles" ]; then
-            echo "No changed SVG icons to check."
+          base="origin/${TARGET_BRANCH}"
+          added=$(git diff "$base" --name-only --diff-filter=A -- 'icons/*.svg')
+          modified=$(git diff "$base" --name-only --diff-filter=M -- 'icons/*.svg')
+
+          # Existing icons are grandfathered: ~86 of them use official brand
+          # colours (Vue, webpack, Swift, ...) that predate this check and are
+          # deliberately off-palette. Report them, but never fail on them.
+          if [ -n "$modified" ]; then
+            echo "::group::Palette report for modified icons (advisory only)"
+            # v3 renamed `--colors` to `--config`; the major is pinned so a
+            # future rename cannot silently break this job again.
+            bunx svg-color-linter@3 --config material-colors.yml $modified || true
+            echo "::endgroup::"
+          fi
+
+          # New icons must follow the Material palette.
+          if [ -z "$added" ]; then
+            echo "No newly added icons to check."
             exit 0
           fi
-          bunx svg-color-linter --colors material-colors.yml $svgFiles
+          echo "Checking $(echo "$added" | wc -l) newly added icon(s)..."
+          bunx svg-color-linter@3 --config material-colors.yml $added
